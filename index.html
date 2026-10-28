@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victor Matthew | AI Automation Specialist</title>
+<meta name="description" content="AI automation specialist and automation systems consultant. I build workflows, AI agents and integrations that remove repetitive business work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<!--
+  EDIT BEFORE PUBLISHING (search for "EDIT"):
+  1. Your email, LinkedIn and Upwork links (footer + contact section)
+  2. Sample builds: swap in real projects as you finish them
+  3. Keep anything labeled "sample" honest until it is a real client result
+-->
+<style>
+:root{
+  --bg:#f2f5f7; --surface:#ffffff; --ink:#12202e; --muted:#4d5d6c;
+  --line:#cdd6de; --accent:#0b6e6e; --accent-ink:#ffffff; --pulse:#e8590c;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--pulse);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;letter-spacing:-.02em}
+h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:700;max-width:16ch}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:700;margin-bottom:1.5rem}
+h3{font-size:1.25rem;font-weight:500}
+p{margin:0 0 1rem;max-width:62ch}
+header.top{padding:1.25rem 0}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.logo{font:700 1.15rem var(--display);text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.25rem;color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.85rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:500;border:2px solid var(--accent)}
+.btn:hover{background:#085a5a}
+.btn.alt{background:transparent;color:var(--accent)}
+.btn.alt:hover{background:#e3eeee}
+.hero{padding:3rem 0 4rem}
+.hero p.lead{font-size:1.2rem;color:var(--muted);margin:1.5rem 0 2rem}
+.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:3rem}
+.flow{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1rem}
+.flow svg{width:100%;height:auto;display:block}
+.flow figcaption{font-size:.85rem;color:var(--muted);margin-top:.5rem}
+.node rect{fill:#e3eeee;stroke:var(--accent);stroke-width:2}
+.node text{font:500 14px var(--body);fill:var(--ink)}
+.wire{stroke:var(--accent);stroke-width:2;fill:none;stroke-dasharray:6 5}
+section{padding:4rem 0;border-top:1px solid var(--line)}
+.rows{margin:0;padding:0;list-style:none}
+.rows li{display:grid;grid-template-columns:minmax(200px,1fr) 2fr;gap:1rem 2rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.rows li:first-child{border-top:1px solid var(--line)}
+.rows p{margin:0;color:var(--muted)}
+.builds{display:grid;gap:1.5rem}
+.build{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:1.5rem}
+.tag{display:inline-block;font-size:.8rem;background:#fdebd9;color:#8a3a00;padding:.15rem .6rem;border-radius:99px;margin-bottom:.75rem}
+.build dl{display:grid;grid-template-columns:8rem 1fr;gap:.4rem 1rem;margin:1rem 0 0}
+.build dt{color:var(--muted);font-size:.95rem}
+.build dd{margin:0}
+.tools{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0;list-style:none}
+.tools li{background:var(--surface);border:1px solid var(--line);padding:.4rem .9rem;border-radius:6px}
+.steps{counter-reset:s;margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.5rem}
+.steps li{counter-increment:s;border-top:3px solid var(--accent);padding-top:.9rem}
+.steps li::before{content:"Step " counter(s);display:block;color:var(--muted);font-size:.9rem;margin-bottom:.25rem}
+.steps p{color:var(--muted);margin:.4rem 0 0}
+form{display:grid;gap:1rem;max-width:520px}
+label{display:grid;gap:.3rem;font-weight:500}
+input,textarea{font:inherit;padding:.7rem .8rem;border:1px solid #8a98a6;border-radius:6px;background:var(--surface);color:var(--ink)}
+textarea{min-height:130px;resize:vertical}
+button.btn{cursor:pointer;font:inherit;font-weight:500;justify-self:start}
+footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (max-width:640px){
+  .rows li{grid-template-columns:1fr}
+  .build dl{grid-template-columns:1fr}
+  nav a{margin:0 1rem 0 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .pulse{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Victor Matthew</a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#builds">Sample builds</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+  <h1>I turn repetitive business work into workflows that run themselves.</h1>
+  <p class="lead">I’m an AI automation specialist and systems consultant. I start with the business problem, then pick the simplest tools that solve it: workflows, AI agents and app integrations.</p>
+  <div class="actions">
+    <a class="btn" href="#contact">Book a free automation audit</a>
+    <a class="btn alt" href="#builds">See sample builds</a>
+  </div>
+
+  <figure class="flow">
+    <svg viewBox="0 0 760 150" role="img" aria-label="Diagram: a new lead arrives, AI qualifies it and drafts a reply, then the CRM is updated and a follow-up is sent.">
+      <path id="route" class="wire" d="M170 75 H290 M470 75 H590"/>
+      <g class="node"><rect x="10" y="40" width="160" height="70" rx="8"/><text x="90" y="80" text-anchor="middle">New lead arrives</text></g>
+      <g class="node"><rect x="290" y="40" width="180" height="70" rx="8"/><text x="380" y="72" text-anchor="middle">AI scores the lead</text><text x="380" y="92" text-anchor="middle">and drafts a reply</text></g>
+      <g class="node"><rect x="590" y="40" width="160" height="70" rx="8"/><text x="670" y="72" text-anchor="middle">CRM updated,</text><text x="670" y="92" text-anchor="middle">follow-up sent</text></g>
+      <circle class="pulse" r="7" fill="#e8590c">
+        <animateMotion dur="4s" repeatCount="indefinite" path="M90 75 H670" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/>
+      </circle>
+    </svg>
+    <figcaption>Example of the kind of workflow I build: a lead-handling flow from first contact to follow-up.</figcaption>
+  </figure>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What I build</h2>
+    <ul class="rows">
+      <li><h3>Workflow automation</h3><p>Connect your apps so data moves on its own and manual copy-paste disappears.</p></li>
+      <li><h3>AI agents and chatbots</h3><p>Assistants that answer questions, triage requests and draft replies, with a human review step where it matters.</p></li>
+      <li><h3>CRM and lead follow-up</h3><p>Capture, qualify and follow up with leads and customers automatically, so nobody falls through the cracks.</p></li>
+      <li><h3>API and app integrations</h3><p>Webhooks and API connections between the tools you already pay for.</p></li>
+      <li><h3>Document processing</h3><p>Pull the fields you need out of invoices, forms and emails, and send them where they belong.</p></li>
+      <li><h3>Automation audits and consulting</h3><p>I review how your team works, find what is worth automating, and give you a clear plan and priorities.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="builds">
+  <div class="wrap">
+    <h2>Sample builds</h2>
+    <p>These are demonstration workflows I designed to show how I approach problems. They are not client projects, and I will replace them with real case studies as I complete them.</p>
+    <div class="builds">
+
+      <!-- EDIT: replace with real projects when you have them (add real results only if they are true). -->
+      <article class="build">
+        <span class="tag">Sample build, not a client project</span>
+        <h3>Lead intake to CRM follow-up</h3>
+        <p>A web form submission is scored by an LLM, added to the CRM, and the lead gets a personalised first reply.</p>
+        <dl>
+          <dt>Flow</dt><dd>Form, webhook, AI scoring, CRM contact, follow-up sequence</dd>
+          <dt>Tools</dt><dd>n8n or Make.com, GoHighLevel, an LLM API</dd>
+          <dt>I would measure</dt><dd>Time to first reply and share of leads followed up</dd>
+        </dl>
+      </article>
+
+      <article class="build">
+        <span class="tag">Sample build, not a client project</span>
+        <h3>Invoice and document processing</h3>
+        <p>Documents arrive by email, an LLM extracts the key fields, and a row is created in a database. Anything unclear is flagged for a person to check.</p>
+        <dl>
+          <dt>Flow</dt><dd>Email attachment, field extraction, Airtable record, exception alert</dd>
+          <dt>Tools</dt><dd>Make.com, Airtable, an LLM API</dd>
+          <dt>I would measure</dt><dd>Minutes per document and error rate</dd>
+        </dl>
+      </article>
+
+      <article class="build">
+        <span class="tag">Sample build, not a client project</span>
+        <h3>Support triage assistant</h3>
+        <p>Incoming messages are categorised, an AI drafts a reply from your own knowledge base, and a person approves it before it is sent.</p>
+        <dl>
+          <dt>Flow</dt><dd>Inbound message, classification, draft reply, human approval, logged task</dd>
+          <dt>Tools</dt><dd>n8n or Zapier, Monday.com, an LLM API</dd>
+          <dt>I would measure</dt><dd>First-response time and reply approval rate</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>Tools I work with</h2>
+    <ul class="tools">
+      <li>n8n</li><li>Make.com</li><li>Zapier</li><li>GoHighLevel</li><li>Airtable</li><li>Monday.com</li><li>Shopify</li><li>BuildShip</li><li>LLM and AI APIs</li><li>Webhooks</li>
+    </ul>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2>How we work together</h2>
+    <ol class="steps">
+      <li><h3>Audit</h3><p>We walk through your current process and find the work that costs you the most time.</p></li>
+      <li><h3>Map</h3><p>I draw the workflow and agree with you what “done” looks like before building.</p></li>
+      <li><h3>Build and test</h3><p>I build it, test it on real examples, and add checks for when something fails.</p></li>
+      <li><h3>Hand over</h3><p>You get documentation and a walkthrough, with support if you need changes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Tell me what you want to automate</h2>
+    <p>Describe the task or process that eats your time. I will reply with whether it is a good fit for automation and what the first step would be.</p>
+    <!-- Netlify Forms: works automatically once deployed. Submissions appear in your Netlify dashboard. -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+      <label>Your name <input type="text" name="name" required autocomplete="name"></label>
+      <label>Email <input type="email" name="email" required autocomplete="email"></label>
+      <label>What would you like to automate? <textarea name="message" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <!-- EDIT: replace these placeholder links with your real ones. -->
+    © 2026 Victor Matthew. Lagos, Nigeria, working with clients remotely.
+    <br><a href="mailto:you@example.com">you@example.com</a> ·
+    <a href="https://www.linkedin.com/in/your-handle">LinkedIn</a> ·
+    <a href="https://www.upwork.com/freelancers/your-profile">Upwork</a>
+  </div>
+</footer>
+
+</body>
+</html>
