@@ -9,7 +9,7 @@ const SITE = {
   role: "AI Automation Specialist and Automation Systems Consultant",
   headline: "I turn repetitive business work into workflows that run themselves.",
   about: "I start with your business problem, then choose the simplest tools that solve it: workflows, AI agents and app integrations. Based in Lagos, working with clients remotely.",
-  photo: "photo.jpg",          // put your picture in the assets folder with this name
+  photo: "photo.jpeg",          // put your picture in the assets folder with this name
   email: "victormatthew333@gmail.com",           // EDIT
   linkedin: "https://www.linkedin.com/in/victor-matthew-it-ops",   // EDIT
   upwork: "https://www.upwork.com/freelancers/~01e98b7c39d2603ea1?mp_source=share" // EDIT
